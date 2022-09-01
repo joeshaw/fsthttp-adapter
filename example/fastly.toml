@@ -1,0 +1,16 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["joe@joeshaw.org"]
+description = "A basic starter kit that demonstrates routing, simple synthetic responses and overriding caching rules."
+language = "go"
+manifest_version = 2
+name = "fsthttp-adapter-example"
+service_id = "5EvWWqIROJLO6d7SwKHMYs"
+
+[local_server]
+
+  [local_server.backends]
+
+    [local_server.backends.ipv4]
+      url = "https://ipv4.joeshaw.org"
